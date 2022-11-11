@@ -1,5 +1,5 @@
-import Expenses from "./Expenses"
-function Card(props){
+
+const Card = (props)=>{
     const classes = 'card ' + props.className;
     return(
         
