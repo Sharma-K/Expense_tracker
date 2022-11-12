@@ -1,7 +1,7 @@
 import React from 'react'
 import NewExpense from './components/NewExpense/NewExpense';
 import Expenses from './components/Expenses/Expenses';
-
+import ExpensesFilter from './components/Expenses/ExpenseFilter';
 function App() {
   const expenses = [
     {
@@ -24,9 +24,15 @@ function App() {
       date: new Date(2021, 5, 12),
     },
   ];
+  const addExpenseHandler = (newExpense) => {
+    
+    
+
+  }
   return (
     <div>
-   < NewExpense />
+   < NewExpense addExpense={addExpenseHandler} />
+   
     <Expenses expense={expenses}/>
     </div>
   );
