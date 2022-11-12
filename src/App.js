@@ -2,7 +2,7 @@ import React from 'react'
 import NewExpense from './components/NewExpense/NewExpense';
 import Expenses from './components/Expenses/Expenses';
 import ExpensesFilter from './components/Expenses/ExpenseFilter';
-
+// import Chart from './components/Chart/Chart';
 const dummy_expenses = [
   {
     id: 'e1',
@@ -42,7 +42,7 @@ function App() {
   return (
     <div>
    < NewExpense addExpense={addExpenseHandler} />
-   
+
     <Expenses expense={array}/>
     </div>
   );
